@@ -4,9 +4,13 @@ img.logo{
     height: 50px;
 
 }
-ul.navbar-nav{
+a.navbar-link{
 
     text-align: right;
+}
+
+footer{
+    background-color: rgb(255, 174, 0);
 }
 
 /* // Small devices (landscape phones, 576px and up) */
