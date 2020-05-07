@@ -1,44 +1,35 @@
 
-footer{
-    background-color: rgba(2, 128, 19, 0.76);
-}
+
 
 .header {
 background-color: rgba(255, 255, 255, 0.411);
   
 }
+footer{
+    background-color: rgba(40, 2, 128, 0.76);
+}
 /* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+@media (max-width: 576px) {
     img.logoalcaldia{
-       
-        width: 25px;
-        height: 30px;
+        height: 20px;
+        /* width: 50px; */
     }
  }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-    img.logoalcaldia{
-       
-        width: 180px;
-        height: 30px;
-    }
+   img.logoalcaldia{
+       height: 45px;
+       /* width: 50px; */
+   }
 }
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-    img.logoalcaldia{
-       
-        width: 200px;
-        height: 30;
-    }
+    
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (max-width: 1200px) { 
-    img.logoalcaldia{
-        
-        width: 300px;
-        height: 30px;
-    }
-       
+    
+     
 }
