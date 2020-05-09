@@ -17,8 +17,7 @@ iframe{
     height: 100%;
 }
 
-p.text{
- 
+p.text{ 
     color:white;
     margin-top: 10px;
     text-align: center;
@@ -28,7 +27,7 @@ p.text{
 
 .redessociales,ul.iconos{
     background-color: rgb(137, 141, 141);
-    font-size: 40px;
+    font-size: 35px;
     color: white;
     
      }
@@ -36,6 +35,9 @@ i.contac{
     color: white;
     font-size: 30px;
     margin-left: 20px;
+}
+.text_contac{
+    color: white;
 }
 
    

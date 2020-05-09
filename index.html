@@ -60,105 +60,115 @@
 
   <!-- inicia carousel -->
   <section>
-  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./img/unnamed.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/unnamed.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="..." class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="..." class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-        </div>
-      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</section>
+  </section>
   <!-- fin carousel -->
 
   <!-- Footer -->
   <footer class="footer">
-
+    <!--contenedor general -->
     <div class="container-fluid">
+      <!-- fila general -->
       <div class="row">
+        <!-- columna con mapa -->
         <div class="col-md-6">
           <p class="text">Ubicación</p>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1884.0429494784391!2d-99.02456807301851!3d19.191450176982382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce052555a30e47%3A0xe53da50fbef112ed!2sAlcald%C3%ADa%20Milpa%20Alta!5e0!3m2!1ses-419!2smx!4v1588826657157!5m2!1ses-419!2smx"
             frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            <br>
+          <br>
+          <!-- columna con mapa -->
         </div>
+        <!-- columna con contenedor anidado -->
         <div class="col-md-6 text-center">
-          <p class=" text">Información de contacto</p>
-          <!-- Botones de inforamción-->
-          <p>
-            <i class="contac fas fa-phone"></i> (55) 5862 3150</p><br>
-          <p>
-            <i class="contac fas fa-envelope"></i>contacto@milpa-alta.cdmx.gob.mx</p><br>
-          <p>
-            <i class="contac fas fa-location-arrow"></i>Av. México Esq. Constitución s/n, Alcaldía Milpa Alta C.P. 12000</p><br>
-        
-          <!-- Botones de inforamción -->
+          <!-- fila de contacto y redes sociales-->
+          <div class="row">
+            <!-- columna contacto -->
+            <div class="col-sm-7">
+              <p class=" text">Contactanos</p>
+              <!-- Botones de inforamción-->
+              <p class="text_contac">
+                <i class="contac fas fa-phone"></i> (55) 5862 3150</p><br>
+              <p class="text_contac">
+                <i class="contac fas fa-envelope"></i> contacto@milpa-alta.cdmx.gob.mx</p><br>
+              <p class="text_contac">
+                <i class="contac fas fa-location-arrow"></i>Av. México Esq. Constitución s/n, Alcaldía Milpa Alta C.P.
+                12000</p><br>
+              <!-- columna contacto -->
+            </div>
+            <!-- columna redes sociales -->
+            <div class=" redessociales col-sm-5">
+              <p class="text">Siguenos</p>              
+              <ul class="iconos list-unstyled text-center">
+                <li class="list-item">
+                  <a class="btn-floating btn-fb mx-2">
+                    <i class="fab fa-facebook-f"> </i>
+                  </a>
+                </li>
+                <li class="list-item">
+                  <a class="btn-floating btn-tw">
+                    <i class="fab fa-twitter"> </i>
+                  </a>
+                </li>
+                <li class="list-item">
+                  <a class="btn-floating btn-youtube">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </li>
+                <li class="list-item">
+                  <a class="btn-floating btn-insta">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+              <!-- columna redes sociales -->
+            </div>
+            <!-- fila de contacto y redes sociales -->
+          </div>
+          <!-- columna con contenedor anidado -->
         </div>
-
+        <!-- fila general -->
       </div>
+      <!-- contenedor general -->
     </div>
-<br>
-    <!-- redes sociales -->
-   
-    <div class="redessociales container-fluid">
-      <!-- Social buttons -->
-      <ul class="iconos list-unstyled list-inline text-center">
-        <li class="list-inline-item">
-          <a class="btn-floating btn-fb mx-2">
-            <i class="fab fa-facebook-f"> </i>
-          </a>
-          
-        </li>
-        <li class="list-inline-item">
-          <a class="btn-floating btn-tw">
-            <i class="fab fa-twitter"> </i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="btn-floating btn-youtube">
-            <i class="fab fa-youtube"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="btn-floating btn-insta">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </li>
-       
-      </ul>
-      <!-- Social buttons -->
-    </div>
+
 
     <!-- Copyright -->
     <div class="copyfooter footer-copyright text-center py-2">
