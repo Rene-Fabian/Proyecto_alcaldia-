@@ -5,6 +5,8 @@
 background-color: rgba(255, 255, 255, 0.411);
   
 }
+
+
 footer{
     background-color: #898d8d;
 }
@@ -36,6 +38,31 @@ i.contac{
     font-size: 30px;
     margin-left: 20px;
 }
+
+i.fas.fa-phone:hover,.fas.fa-envelope:hover,.fas.fa-location-arrow:hover{
+    color:rgb(0, 174, 66);
+    cursor: pointer;
+}
+
+i.fab.fa-facebook-f:hover{
+    color:#3b5998;
+    cursor: pointer;
+}
+
+i.fab.fa-twitter:hover{
+    color:#00acee;
+    cursor: pointer;
+}
+
+i.fab.fa-youtube:hover{
+    color:#c4302b;
+    cursor: pointer;
+}
+
+i.fab.fa-instagram:hover{
+     cursor: pointer;
+}
+
 .text_contac{
     color: white;
 }
