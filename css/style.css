@@ -74,9 +74,9 @@ p.footercopy,.copyfooter{
     color:white;
     background-color:  rgb(0, 174, 66);
     font-family: helvetica;
-    
-
 }
+
+
 
 
 /* // Small devices (landscape phones, 576px and up) */
@@ -88,17 +88,30 @@ p.footercopy,.copyfooter{
  }
 
  
+
+
+ /* // Medium devices (tablets, 768px and up) */
+@media (min-width: 500px) { 
+    img.logoalcaldia{
+        height: 25px;
+        /* width: 50px; */
+    }
+ }
  
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
    img.logoalcaldia{
-       height: 45px;
+       height: 30px;
        /* width: 50px; */
    }
 }
-/* // Large devices (desktops, 992px and up) */
+/* // Large devices (desktops, 992px and up) patalla normal */
 @media (min-width: 992px) { 
-    
+   
+    img.logoalcaldia{
+        height: 45px;
+        /* width: 50px; */
+    }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
