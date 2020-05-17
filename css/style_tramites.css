@@ -4,14 +4,67 @@ section{
    margin-inline:center ;
 }
 
-
-
 .card{
     border-radius: 10px;
-    box-shadow:0px 0px 8px rgb(117, 117, 117);
-    /* anchura */
-   
+    box-shadow:0px 0px 8px  rgb(137, 141, 141);
+      }
+.card:hover{
+    transition-duration: 0.4s;
+    box-shadow:0px 0px 15px rgb(137, 141, 141);     
+    /* box-shadow:0px 0px 14px rgb(0, 174, 66);      */
+}
+
+.card-title{
+    text-align: center;
+}
+.card-text{
+    text-align: justify;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+    img.card-img-top{
+        width:80px;
+        /* ancho */
+        height:80px ;
+        /* alto */
+        display: flex;
+        margin:auto
+    }
     
 }
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    img.card-img-top{
+        width:120px;
+        /* ancho */
+        height:120px ;
+        /* alto */
+        display: flex;
+        margin:auto
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    img.card-img-top{
+        width:160px;
+        /* ancho */
+        height:160px ;
+        /* alto */
+        display: flex;
+        margin:auto
+    }
+}
+
+
+
+
+img.card-img-top:hover{
+    transform: translateY(-15px);
+    transition-duration: 0.5s;
+}
+
+
 
 
