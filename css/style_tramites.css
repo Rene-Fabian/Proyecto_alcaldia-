@@ -22,7 +22,7 @@ section{
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) { 
+@media (max-width: 576px){ 
     img.card-img-top{
         width:80px;
         /* ancho */
@@ -33,6 +33,22 @@ section{
     }
     
 }
+@media (max-height: 576px){ 
+    img.card-img-top{
+        width:80px;
+        /* ancho */
+        height:80px ;
+        /* alto */
+        display: flex;
+        margin:auto
+    }
+    
+}
+
+
+
+
+
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     img.card-img-top{
@@ -65,6 +81,9 @@ img.card-img-top:hover{
     transition-duration: 0.5s;
 }
 
+.modal-body{
+    text-align:justify;
+}
 
 
 
