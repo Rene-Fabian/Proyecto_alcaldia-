@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style._solicitudes.css">
   <link href="./fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet">
   <title>Alcaldía Milpa Alta</title>
 </head>
@@ -58,11 +59,154 @@
   </header>
   <!--navbar-->
 
-  
+
+  <!-- jumbotron-fluid -->
+  <div class="jumbotron bg-white">
+    <div class="container">
+      <h1 class="display-4 text-center">Realiza tu solicitud</h1>
+      <hr>
+      <p class="lead text-center">Ahora ya puedes realizar tu solicitud desde desde la comodidad de tu hogar</p>
+    </div>
+  </div>
+  <!-- jumbotron-fluid -->
 
 
-  
+  <!-- Formulario -->
 
+  <div class="container">
+    <div class="card">
+      <form action="" method="get">
+        <!--  titulo -->
+        <h5 class="card-header">
+          <strong>Datos personales</strong>
+        </h5>
+        <!-- titulo -->
+
+        <!--datos personales -->
+        <div class="card-body">
+          <!-- primera fila -->
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Nombre(s)" id="nombre" required>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Apellido Paterno" id="paterno" required>
+            </div>
+          </div>
+          <!-- primera fila -->
+          <br>
+          <!-- segunda fila -->
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Apellido Materno" id="materno" required>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder=" Correo electrónico" id="correo" required>
+            </div>
+          </div>
+          <!-- segunda fila -->
+          <br>
+          <!-- tercera fila -->
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Teléfono" id="telefono" required>
+            </div>
+            <div class="col">
+              <select id="sexo" class="form-control">
+                <option selected>Sexo</option>
+                <option>Masculino</option>
+                <option>Femenino</option>
+              </select>
+            </div>
+          </div>
+          <!-- tercera fila -->
+
+        </div>
+        <!-- datos personales -->
+
+        <!-- titulo -->
+        <h5 class="card-header">
+          <strong>Direccion</strong>
+        </h5>
+        <!--titulo -->
+        <!--direccion -->
+        <div class="card-body">
+          <!-- primera fila -->
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Calle" id="calle" required>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="N° Interior" id="interior" required>
+            </div>
+          </div>
+          <!-- primera fila -->
+          <br>
+          <!-- segunda fila -->
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="N° Exterior" id="materno" required>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder=" Código Postal" id="cp" required>
+            </div>
+          </div>
+          <!-- segunda fila -->
+          <br>
+          <!-- tercera fila -->
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Colonia" id="colonia" required>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Pueblo" id="pueblo" required>
+            </div>
+          </div>
+          <!-- tercera fila -->
+
+        </div>
+        <!-- direccion -->
+
+        <!-- titulo -->
+        <h5 class="card-header">
+          <strong>Datos de la solicitud</strong>
+        </h5>
+        <!--titulo -->
+        <!--solicitud -->
+        <div class="card-body">
+        
+          <br>
+          <!-- segunda fila -->
+          <div class="row">
+            <div class="col">
+              <select id="sexo" class="form-control">
+                <option selected>Tipo de solicitud</option>
+                <option>Masculino</option>
+                <option>Femenino</option>
+              </select>
+            </div>
+           
+          </div>
+          <!-- segunda fila -->
+          <br>
+          <!-- tercera fila -->
+          <div class="row">
+            
+            <div class="col">
+              <textarea  class="form-control" name="descripcion" id="descripcion" cols="30" rows="5" placeholder="Descripción" required></textarea>
+            </div>
+          </div>
+          <!-- tercera fila -->
+        </div>
+        <!-- solicitud -->
+        <input type="submit" class="btn btn-success" value="Enviar solicitud">
+      </form>
+    </div>
+  </div>
+
+
+  <!--  Formulario-->
+  <br>
   <!-- Footer -->
   <footer class="footer">
     <!--contenedor general -->
@@ -97,7 +241,7 @@
             </div>
             <!-- columna redes sociales -->
             <div class=" redessociales col-sm-5">
-              <p class="text">Siguenos</p>              
+              <p class="text">Siguenos</p>
               <ul class="iconos list-unstyled text-center">
                 <li class="list-item">
                   <a class="btn-floating btn-fb mx-2">

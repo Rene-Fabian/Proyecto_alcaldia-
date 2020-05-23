@@ -268,7 +268,7 @@ margin-right: auto;
     transition: all 0.8s ease-in-out;
   }
   .ih-item.circle.effect1 .info h3 {
-    color: #fff;
+    color: rgb(170, 14, 14);
     text-transform: uppercase;
     position: relative;
     letter-spacing: 2px;
@@ -276,7 +276,7 @@ margin-right: auto;
     margin: 0 30px;
     padding: 55px 0 0 0;
     height: 110px;
-    text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 0 1px rgb(175, 9, 9), 0 1px 2px rgba(0, 0, 0, 0.3);
   }
   .ih-item.circle.effect1 .info p {
     color: #bbb;
