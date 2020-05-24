@@ -43,7 +43,7 @@ strong{
 .btn{
     display: flex;
     margin:auto;
-    width: 8em;
+    width: auto;
     text-align: center;
 
 }
