@@ -13,6 +13,11 @@
   <link rel="stylesheet" href="./css/style._solicitudes.css">
   <link href="./fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet">
   <title>Alcaldía Milpa Alta</title>
+  <script src="./jsPDF-1.3.2/dist/jspdf.min.js"></script>
+  <script src="./js/getPDF.js"></script>
+  <script src="./js/activar_botones.js"></script>
+  <script src="./js/alert_enviar.js"></script>
+  
 </head>
 
 <body>
@@ -87,10 +92,10 @@
           <!-- primera fila -->
           <div class="row">
             <div class="col">
-              <input type="text" class="form-control" placeholder="Nombre(s)" id="nombre" required>
+              <input type="text" class="form-control" placeholder="Nombre(s)" id="nombre"   pattern="[A-Za-z]*" required>
             </div>
             <div class="col">
-              <input type="text" class="form-control" placeholder="Apellido Paterno" id="paterno" required>
+              <input type="text" class="form-control" placeholder="Apellido Paterno" id="paterno" pattern="[A-Za-z]*" required>
             </div>
           </div>
           <!-- primera fila -->
@@ -98,7 +103,7 @@
           <!-- segunda fila -->
           <div class="row">
             <div class="col">
-              <input type="text" class="form-control" placeholder="Apellido Materno" id="materno" required>
+              <input type="text" class="form-control" placeholder="Apellido Materno" id="materno"  pattern="[A-Za-z]*" required>
             </div>
             <div class="col">
               <input type="text" class="form-control" placeholder=" Correo electrónico" id="correo" required>
@@ -109,7 +114,7 @@
           <!-- tercera fila -->
           <div class="row">
             <div class="col">
-              <input type="text" class="form-control" placeholder="Teléfono" id="telefono" required>
+              <input type="text" class="form-control" placeholder="Teléfono" id="telefono"  pattern="[0-9]*" required>
             </div>
             <div class="col">
               <select id="sexo" class="form-control">
@@ -134,10 +139,10 @@
           <!-- primera fila -->
           <div class="row">
             <div class="col">
-              <input type="text" class="form-control" placeholder="Calle" id="calle" required>
+              <input type="text" class="form-control" placeholder="Calle" id="calle" pattern="{2,5}" required>
             </div>
             <div class="col">
-              <input type="text" class="form-control" placeholder="N° Interior" id="interior" required>
+              <input type="text" class="form-control" placeholder="N° Interior" id="interior"  minlength="2" maxlength="3"  required>
             </div>
           </div>
           <!-- primera fila -->
@@ -145,10 +150,10 @@
           <!-- segunda fila -->
           <div class="row">
             <div class="col">
-              <input type="text" class="form-control" placeholder="N° Exterior" id="materno" required>
+              <input type="text" class="form-control" placeholder="N° Exterior" id="exterior" minlength="2" maxlength="5" pattern="[0-9]*" required>
             </div>
             <div class="col">
-              <input type="text" class="form-control" placeholder=" Código Postal" id="cp" required>
+              <input type="text" class="form-control" placeholder=" Código Postal" id="cp" maxlength="5" pattern="[0-9]*" required>
             </div>
           </div>
           <!-- segunda fila -->
@@ -156,10 +161,10 @@
           <!-- tercera fila -->
           <div class="row">
             <div class="col">
-              <input type="text" class="form-control" placeholder="Colonia" id="colonia" required>
+              <input type="text" class="form-control" placeholder="Colonia" id="colonia" pattern="{2,5}" required>
             </div>
             <div class="col">
-              <input type="text" class="form-control" placeholder="Pueblo" id="pueblo" required>
+              <input type="text" class="form-control" placeholder="Pueblo" id="pueblo" pattern="{2,5}" required>
             </div>
           </div>
           <!-- tercera fila -->
@@ -194,24 +199,36 @@
 
             <div class="col">
               <textarea class="form-control" name="descripcion" id="descripcion" cols="30" rows="5"
-                placeholder="Descripción" required></textarea>
+                placeholder="Descripción" onkeypress="activarbotones();"  required></textarea>
             </div>
           </div>
           <!-- tercera fila -->
         </div>
         <!-- solicitud -->
 
-        
-        <input type="button" class="btn btn-danger " value="Descargar PDF">
+
+        <input type="button" class="btn btn-danger " id="documentopdf" value="Descargar PDF" onclick="getPDF();" disabled>
         <hr>
-        <input type="submit" class=" btn btn-success " value="Continuar">
+        <input type="submit" class=" btn btn-success " id="enviar" value="Enviar" onclick="myFunction();" disabled >
+
+        <div class="alert alert-danger" id="passwordsNoMatchRegister" style="display:none;">
+          <strong>Error!</strong> Looks like the passwords you entered don't match!
+        </div>
+
+
 
       </form>
     </div>
   </div>
 
 
-  <!--  Formulario-->
+
+
+
+
+
+
+
   <br>
   <!-- Footer -->
   <footer class="footer">
@@ -304,7 +321,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
-
+   
 
 
 
