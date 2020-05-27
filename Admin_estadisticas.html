@@ -1,18 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Alcaldia Milpa Alta</title>
+    <!-- MDB icon -->
+    <link rel="stylesheet" href="./css/style._admin.css">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style._admin.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="./css/style_estaditicas.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="./fontawesome-free-5.13.0-web/css/all.css">
 
-    <link href="./fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet">
-    <title>Alcaldía Milpa Alta</title>
+
 </head>
 
 <body>
@@ -31,8 +39,8 @@
             <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
                 <ul class="nav navbar-nav navbar-right">
                     <!-- alineacion del navbar -->
-                   
-                    
+
+
                     <li class="nav-item">
                         <a class="nav-link" href="./Admin_peticiones.html">Peticiones</a>
                     </li>
@@ -56,16 +64,70 @@
     </header>
     <!--navbar-->
 
-    
+    <!-- filtros -->
+    <div class="estructura container">
+        <form action="" method="post" class="form">
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="inputArea" class="">Area:</label>
+                    <select id="inputArea" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="fecha_inicio">Fecha Inicial</label>
+                    <input type="date" name="" id="fecha_inicio" class="form-control">
+                </div>
+                <div class="col-md-3">
+                    <label for="fecha_final">Fecha Final</label>
+                    <input type="date" name="" id="fecha_inicio" class="form-control">
+                </div>
+                <div class="col-md-3">
+                    <label for="input_tipo_peticione">Tipo de petición</label>
+                    <select id="input_tipo_peticione" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+    <!-- graficas -->
+    <div class="graficas container">
+        <div class="row">
+            <div class="col-md-6">
+                <canvas id="labelChart"></canvas>
+            </div>
+            <div class="col-md-6">
+                <canvas id="barChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <!-- graficas -->
 
 
 
 
 
 
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Your custom scripts (optional) -->
+    <script type="text/javascript" src="./js/grafica_pastel.js"></script>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="./js/grafica_barras.js"></script>
+
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
@@ -75,6 +137,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>

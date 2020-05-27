@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design for Bootstrap</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body><canvas id="labelChart"></canvas>
+
+    <!-- Start your project here-->
+
+    <!-- End your project here-->
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Your custom scripts (optional) -->
+    <script type="text/javascript"></script>
+
+
+
+    <script type="text/javascript">
+      var ctxP = document.getElementById("labelChart").getContext('2d');
+      var myPieChart = new Chart(ctxP, {
+        plugins: [ChartDataLabels],
+        type: 'pie',
+        data: {
+          labels: ["Red", "Green", "Yellow", "Grey", "Dark Grey"],
+          datasets: [{
+            data: [210, 130, 120, 160, 120],
+            backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
+            hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
+          }]
+        },
+        options: {
+          responsive: true,
+          legend: {
+            position: 'right',
+            labels: {
+              padding: 20,
+              boxWidth: 10
+            }
+          },
+          plugins: {
+            datalabels: {
+              formatter: (value, ctx) => {
+                let sum = 0;
+                let dataArr = ctx.chart.data.datasets[0].data;
+                dataArr.map(data => {
+                  sum += data;
+                });
+                let percentage = (value * 100 / sum).toFixed(2) + "%";
+                return percentage;
+              },
+              color: 'white',
+              labels: {
+                title: {
+                  font: {
+                    size: '16'
+                  }
+                }
+              }
+            }
+          }
+        }
+      });
+    </script>
+  </body>
+
+</html>
