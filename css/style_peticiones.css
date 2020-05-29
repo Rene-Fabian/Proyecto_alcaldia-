@@ -1,0 +1,13 @@
+.thead{
+
+    background-color: rgba(56, 55, 59, 0.74);
+    color: aliceblue;
+   
+   margin-left: auto;
+   margin-right: auto;
+}
+
+
+button{
+    border:none;
+}

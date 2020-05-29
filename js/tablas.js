@@ -1,5 +1,9 @@
-$('#dt-less-columns').mdbEditor({
-modalEditor: true,
-headerLength: 5,
+
+$(document).ready(function () {
+    $("#buscar_datos").on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+        $("#cuerpo_tabla tr").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
 });
-$('.dataTables_length').addClass('bs-select');
