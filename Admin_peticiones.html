@@ -61,105 +61,93 @@
     </header>
     <!--navbar-->
 
+    <!-- contenerdor form -->
+
     <div class="container mt-4 text-center">
-        <h2>Resgistro de Peticiones</h2>
-        <div class="row">
+        <div class="row mt-4">
             <div class="col-md-4">
-                <input class="form-control" id="buscar_datos" type="text" placeholder="Buscar">
-                <br>
+                <input type="text" class="form-control">
+            </div>
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-4">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#staticBackdrop">
+                    Agregar Registro
+                </button>
+                <!-- Button trigger modal -->
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                    role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="" onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                                    <div>
+                                        <label>Full Name*</label><label class="validation-error hide"
+                                            id="fullNameValidationError"></label>
+                                        <input class="form-control" type="text" name="fullName" id="fullName">
+                                    </div>
+                                    <div>
+                                        <label>EMP Code</label>
+                                        <input class="form-control" type="text" name="empCode" id="empCode">
+                                    </div>
+                                    <div>
+                                        <label>Salary</label>
+                                        <input type="text" name="salary" id="salary">
+                                    </div>
+                                    <div>
+                                        <label>City</label>
+                                        <input type="text" name="city" id="city">
+                                    </div>
+                                    <div class="form-action-buttons">
+                                        <input type="submit" value="Submit">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Understood</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- modal -->
             </div>
         </div>
-        <div class="row">
-            <table class="table table-bordered table-hover" id="registropeticione">
-                <thead class="thead">
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Folio Digital</th>
-                        <th scope="col">Fecha de Registro</th>
-                        <th scope="col">Nombre(s)</th>
-                        <th scope="col">A. Paterno</th>
-                        <th scope="col">A. Materno</th>
-                        <th scope="col">Tipo de Petición</th>
-                        <th scope="col">Acciones</th>
-                    </tr>
-                </thead>
-                <tbody id="cuerpo_tabla">
-                    <tr>
-                        <td>1</td>
-                        <td>ADP0045</td>
-                        <td>05/05/2020</td>
-                        <td>Antonio</td>
-                        <td>Aguilar</td>
-                        <td>Sanchez</td>
-                        <td>Alumbrado Público </td>
-                        <td>
-                            <button href="" role="button"><i class="far fa-eye"></i></button>
-                            <button href="" role="button"><i class="far fa-edit"></i></button>
-                            <button href="" role="button"><i class="far fa-trash-alt"></i></button>
-                            <button href="" role="button"><i class="fas fa-print"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>ADP0032</td>
-                        <td>07/04/2020</td>
-                        <td>Angel </td>
-                        <td>Ochoa</td>
-                        <td>Martinez</td>
-                        <td>Espectaculo Público </td>
-                        <td>
-                            <button href="" role="button" class="ver"><i class="far fa-eye"></i></button>
-                            <button href="" role="button" class="editar"><i class="far fa-edit"></i></button>
-                            <button href="" role="button" class="eliminar"><i class="far fa-trash-alt"></i></button>
-                            <button href="" role="button"><i class="fas fa-print"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>ADP0096</td>
-                        <td>26/03/2020</td>
-                        <td>Jose David </td>
-                        <td>Rios</td>
-                        <td>Olivos</td>
-                        <td>Pavimentación</td>
-                        <td>
-                            <button href="" role="button" class="ver"><i class="far fa-eye"></i></button>
-                            <button href="" role="button" class="editar"><i class="far fa-edit"></i></button>
-                            <button href="" role="button" class="eliminar"><i class="far fa-trash-alt"></i></button>
-                            <button href="" role="button"><i class="fas fa-print"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>ADP0015</td>
-                        <td>13/04/2020</td>
-                        <td>Alejandra</td>
-                        <td>Espino</td>
-                        <td>Sanlucar</td>
-                        <td>Drenaje</td>
-                        <td>
-                            <button href="" role="button" class="ver"><i class="far fa-eye"></i></button>
-                            <button href="" role="button" class="editar"><i class="far fa-edit"></i></button>
-                            <button href="" role="button" class="eliminar"><i class="far fa-trash-alt"></i></button>
-                            <button href="" role="button"><i class="fas fa-print"></i></button>
-                        </td>
-                    </tr>
-                </tbody>
+        <!-- tabla -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <table class="list table-bordered"  id="employeeList">
+                    <thead class="thead">
+                        <tr>
+                            <th>Full Name</th>
+                            <th>EMP Code</th>
+                            <th>Salary</th>
+                            <th>City</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
 
-            </table>
+                    </tbody>
+                </table>
+            </div>
         </div>
-        <ul class="pagination justify-content-center">
-            <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
-            <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
-            <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
-            <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
-        </ul>
-
-
     </div>
 
 
 
+
+
+    <script src="./js/acciones.js"></script>
     <!-- tabla -->
 
 
