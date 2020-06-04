@@ -3,9 +3,9 @@ var ctxB = document.getElementById("barChart").getContext('2d');
 var myBarChart = new Chart(ctxB, {
     type: 'bar',
     data: {
-        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        labels: ["Area1", "Area2", "Area3", "Area4", "Area5", "Area6"],
         datasets: [{
-            label: '# of Votes',
+            label: '# Depatmentos',
             data: [12, 19, 3, 5, 2, 3],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',

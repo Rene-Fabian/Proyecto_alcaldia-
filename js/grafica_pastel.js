@@ -4,7 +4,7 @@ var myPieChart = new Chart(ctxP, {
     plugins: [ChartDataLabels],
     type: 'pie',
     data: {
-        labels: ["Red", "Green", "Yellow", "Grey", "Dark Grey"],
+        labels: ["Area1", "Area2", "Area3", "Area4", "Area5"],
         datasets: [{
             data: [210, 130, 120, 160, 120],
             backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],

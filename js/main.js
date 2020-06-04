@@ -32,7 +32,7 @@ $(document).ready(function () {
         area = $.trim($('#area').val());
         tipo_peticion = $.trim($('#tipo_peticion').val());
         $.ajax({
-            url: "bd/crud.php",
+            url: "",
             type: "POST",
             datatype: "json",
             data: { id: id, fecha: fecha, nombre: nombre, paterno: paterno, materno: materno, area: area, tipo_peticion: tipo_peticion, opcion: opcion },
