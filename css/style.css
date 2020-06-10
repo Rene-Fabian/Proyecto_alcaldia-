@@ -5,35 +5,156 @@ background-color: rgba(255, 255, 255, 0.411);
 }
 
 
-footer{
+/* footer{
     background-color: #898d8d;
-}
+} */
 
-iframe{
+/* iframe{
     position: absolute;
     top:0;
     left: 0;
     width: 100%;
-    height: 100%;
+  
+} */
+@media (max-width: 268px) {
+    iframe{
+       /* position: relative; */
+       top:0;
+       left: 0;
+       margin-left: auto;
+       margin-right: auto;
+       width: 100%;
+       height:50px;
+      
+      }
+}
+@media (max-width: 368px) {
+    iframe{
+       /* position: absolute; */
+       top:0;
+       left: 0;
+       margin-left: auto;
+       margin-right: auto;
+       width: 100%;
+       height:120px;
+      
+      }
+}
+@media (min-width: 368px) {
+    iframe{
+       /* position: absolute; */
+       top:0;
+       left: 0;
+       margin-left: auto;
+       margin-right: auto;
+       width: 100%;
+       height:140px;
+      
+      }
+}
+@media (min-width: 468px) {
+    iframe{
+       /* position: absolute; */
+       top:0;
+       left: 0;
+       width: 100%;
+       height:160px;
+      
+      }
+}
+@media (max-width: 568px) {
+    iframe{
+       /* position: absolute; */
+       top:0;
+       left: 0;
+       width: 100%;
+       height:200px;
+      
+      }
 }
 
+
+ @media (max-width: 668px) {
+         iframe{
+            /* position: absolute; */
+            top:0;
+            left: 0;
+            width: 100%;
+            height:250px;
+             
+           }
+    }
+ 
+
+@media (min-width: 768px) {
+    iframe{
+        /* position: absolute; */
+        top:0;
+        left: 0;
+        width: 100%;
+        height:100%;
+         
+       }
+ }
+ @media (min-width: 800px) {
+    iframe{
+        /* position: absolute; */
+        top:0;
+        left: 0;
+        width: 100%;
+        height:100%;
+         
+       }
+ }
+
+
+@media (min-width: 992px) {
+    iframe{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;;
+} 
+}
+
+
+@media (min-width: 1200px) {
+    iframe{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+    height: 100%;
+}
+ }
+
+
 p.text{ 
-    color:white;
+    color:rgb(255, 255, 255);
     margin-top: 10px;
     text-align: center;
     font-family: helvetica;
-    font-size: 35px;
+   
 }
 
 .redessociales,ul.iconos{
     background-color: rgb(137, 141, 141);
-    font-size: 35px;
+    font-size: 2.5vw;
     color: white;
     
      }
+
+     .contactosfoot{
+        background-color: rgb(137, 141, 141);
+        color: white;
+        
+     }
+
+
 i.contac{
     color: white;
-    font-size: 30px;
+    font-size: 2.5vw;
     margin-left: 20px;
 }
 
@@ -45,6 +166,7 @@ i.fas.fa-phone:hover,.fas.fa-envelope:hover,.fas.fa-location-arrow:hover{
 i.fab.fa-facebook-f:hover{
     color:#3b5998;
     cursor: pointer;
+    
 }
 
 i.fab.fa-twitter:hover{
@@ -58,6 +180,7 @@ i.fab.fa-youtube:hover{
 }
 
 i.fab.fa-instagram:hover{
+    color:#c75484;
      cursor: pointer;
 }
 
@@ -74,6 +197,14 @@ p.footercopy,.copyfooter{
     font-family: helvetica;
 }
 
+.text_contac:hover{
+    color:rgb(0, 174, 66);
+    cursor: pointer;
+}
+
+.btn-floating{
+    color: white;
+}
 
 
 
