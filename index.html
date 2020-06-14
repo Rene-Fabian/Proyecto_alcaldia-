@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style_login.css">
   <link href="./fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet">
   <title>Alcaldía Milpa Alta</title>
 </head>
@@ -49,7 +50,37 @@
               <i class="fas fa-user"></i>
             </a>
             <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="./login.html">Iniciar sesión</a>
+
+              <form action="" method="GET" class="acceso needs-validation text-center border " novalidate>
+                <h2 class="text-center">Iniciar sesión</h2>
+                <div class="form-group">
+                  <br>
+                  <input type="text" class="form-control" id="uname" placeholder="Usuario" name="uname" required>
+                  <div class="valid-feedback">Contenido Valido.</div>
+                  <div class="invalid-feedback">Por favor llenar campo.</div>
+                </div>
+                <div class="form-group">
+
+                  <input type="password" class="form-control" id="pwd" placeholder="Contraseña" name="pswd" required>
+                  <div class="valid-feedback">Contenido Valido.</div>
+                  <div class="invalid-feedback">Por favor llenar campo.</div>
+                </div>
+                <div class="form-group form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember" required> Recordar contraseña
+                    <div class="valid-feedback">Valido.</div>
+                    <div class="invalid-feedback">Selecciona la casilla para continuar.</div>
+                  </label>
+                </div>
+
+                <p>Siguenos</p>
+                <a href="#" class="mx-2" role="button"><i class="fab fa-facebook-f light-blue-text"></i></a>
+                <a href="#" class="mx-2" role="button"><i class="fab fa-twitter light-blue-text"></i></a>
+                <a href="#" class="mx-2" role="button"><i class="fab fa-instagram light-blue-text"></i></a>
+                <br>
+                <button type="submit" class="accesouser btn btn-primary">Entrar</button>
+              </form>
+
             </div>
           </li>
         </ul>
@@ -60,28 +91,28 @@
 
   <!-- inicia carousel -->
   <section>
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" >
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-pause="false">
       <ol class="carousel-indicators">
-        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class=""></li>
         <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
         <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
-        <div class="carousel-item active " data-interval="1000">
-          <img src="./img/20.svg" class="d-block w-100"  alt="...">
+        <div class="carousel-item active " data-interval="4000">
+          <img src="./img/20.svg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>Somos Cultura</h5>
             <p>Milpa Alta una alcadia con historia milenaria.</p>
           </div>
         </div>
-        <div class="carousel-item" data-interval="1000">
+        <div class="carousel-item" data-interval="3000">
           <img src="./img/26.svg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>Somos Tradición</h5>
             <p>La mayor producción de nopal la encuentras aquí.</p>
           </div>
         </div>
-        <div class="carousel-item" data-interval="1000">
+        <div class="carousel-item" data-interval="3000">
           <img src="./img/38.svg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>Somos Milpa Alta</h5>
@@ -100,8 +131,8 @@
     </div>
   </section>
   <!-- fin carousel -->
- 
-   <!-- Footer -->
+
+  <!-- Footer -->
   <footer class="footer">
     <!--contenedor general -->
     <div class="container-fluid">
@@ -182,6 +213,7 @@
 
 
   <!-- Optional JavaScript -->
+  <script src="./js/validar_campos_login.js"></script>  
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

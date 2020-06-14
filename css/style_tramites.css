@@ -4,19 +4,22 @@ section{
    margin-inline:center ;
 }
 
-.card{
+.card {
     border-radius: 10px;
     display: flex;
     box-shadow:0px 0px 8px  rgb(137, 141, 141);
+    
     /* transform: translateY(-15px); */
       }
-.card:hover{
-    transition-duration: 0.4s;
-    box-shadow:0px 0px 15px rgb(137, 141, 141);     
+.card:hover {
+    transition-duration: 0.3s;
+    
+    box-shadow:0px 0px 15px rgb(137, 141, 141);  
+    
 }
 
-.card-img-top:hover{
-    transform: translateY(-15px);
+img.card-img-top:hover{
+       transform: translateY(-15px);
     transition-duration: 0.5s;
 } 
 
@@ -26,9 +29,9 @@ section{
     
 }
 .card-text{
-    text-align: justify;
+    text-align: center;
     font-size: 1.200vw;
-    margin-top: 1em;
+    /* margin-top: 0em; */
     
 }
 
@@ -91,7 +94,7 @@ section{
 } */
 
 .modal-body{
-    text-align:justify;
+    text-align:left;
 }
 
 button.conocer{
@@ -103,4 +106,24 @@ button.conocer{
     text-align: center;
    
 }
+
+p.listas{
+    font-size: 2vw;
+}
+
+/* 
+@media (max-width: 176px) {
+    button.conocer{
+        width: 80px;
+        height: 40px;
+    }
+ }
+
+ @media (max-width: 276px) {
+    button.coonocer{
+        width: 160px;
+        height: 8px;
+    }
+ } */
+
 

@@ -11,6 +11,7 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/style_tramites.css">
+  <link rel="stylesheet" href="./css/style_login.css">
   <link href="./fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet">
   <title>Alcaldía Milpa Alta</title>
 </head>
@@ -50,7 +51,35 @@
               <i class="fas fa-user"></i>
             </a>
             <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="login.html">Iniciar sesión</a>
+              <form action="" method="GET" class=" acceso needs-validation text-center border " novalidate>
+                <h2 class="text-center">Iniciar sesión</h2>
+                <div class="form-group">
+                  <br>
+                  <input type="text" class="form-control" id="uname" placeholder="Usuario" name="uname" required>
+                  <div class="valid-feedback">Contenido Valido.</div>
+                  <div class="invalid-feedback">Por favor llenar campo.</div>
+                </div>
+                <div class="form-group">
+
+                  <input type="password" class="form-control" id="pwd" placeholder="Contraseña" name="pswd" required>
+                  <div class="valid-feedback">Contenido Valido.</div>
+                  <div class="invalid-feedback">Por favor llenar campo.</div>
+                </div>
+                <div class="form-group form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember" required> Recordar contraseña
+                    <div class="valid-feedback">Valido.</div>
+                    <div class="invalid-feedback">Selecciona la casilla para continuar.</div>
+                  </label>
+                </div>
+
+                <p>Siguenos</p>
+                <a href="#" class="mx-2" role="button"><i class="fab fa-facebook-f light-blue-text"></i></a>
+                <a href="#" class="mx-2" role="button"><i class="fab fa-twitter light-blue-text"></i></a>
+                <a href="#" class="mx-2" role="button"><i class="fab fa-instagram light-blue-text"></i></a>
+                <br>
+                <button type="submit" class="accesouser btn btn-primary">Entrar</button>
+              </form>
             </div>
           </li>
         </ul>
@@ -75,8 +104,8 @@
               sobre el ejercicio de las funciones de la unidad ejecutora.</p>
 
             <!-- Modal -->
-            <div class="modal fade" id="staticBackdrop_obras"  data-keyboard="true" tabindex="-1"         
-              role="dialog" aria-hidden="false">
+            <div class="modal fade" id="staticBackdrop_obras" data-keyboard="true" tabindex="-1" role="dialog"
+              aria-hidden="false">
               <!-- la funcion backdrop hace estatico en fondo, data-backdrop="static"  -->
               <div class="modal-dialog modal-dialog-scrollable">
                 <div class="modal-content">
@@ -112,12 +141,12 @@
           <div class="card-footer bg-white">
             <!-- botton modal -->
             <button type="button" class="conocer btn btn-success" data-toggle="modal"
-              data-target="#staticBackdrop_obras">Conocer
+              data-target="#staticBackdrop_obras" style="font-size:1.200vw;">Conocer
               más</button>
             <!-- Botton modal -->
           </div>
           <div class="card-footer">
-            <small class="text-muted">Ultima actualización 16/05/2020</small>
+            <small class="text-muted" style="font-size:1vw;">Ultima actualización 16/05/2020</small>
           </div>
           <!-- Primer card -->
         </div>
@@ -135,9 +164,9 @@
               derecho.</p>
 
             <!-- Modal -->
-            <div class="modal fade" id="staticBackdrop_riesgos" data-keyboard="true"
-              tabindex="-1" role="dialog" aria-hidden="true">
-               <!-- la funcion backdrop hace estatico en fondo, data-backdrop="static"  -->
+            <div class="modal fade" id="staticBackdrop_riesgos" data-keyboard="true" tabindex="-1" role="dialog"
+              aria-hidden="true">
+              <!-- la funcion backdrop hace estatico en fondo, data-backdrop="static"  -->
               <div class="modal-dialog modal-dialog-scrollable">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -163,12 +192,12 @@
           <div class="card-footer bg-white">
             <!-- Button Modal -->
             <button type="button" class="conocer btn btn-success" data-toggle="modal"
-              data-target="#staticBackdrop_riesgos">  Conocer
+              data-target="#staticBackdrop_riesgos" style="font-size:1.200vw;"> Conocer
               más</button>
             <!-- Button Modal -->
           </div>
           <div class="card-footer">
-            <small class="text-muted">Ultima actualización 16/05/2020</small>
+            <small class="text-muted" style="font-size:1vw;">Ultima actualización 16/05/2020</small>
           </div>
 
           <!-- Segundo card -->
@@ -186,9 +215,9 @@
             </p>
 
             <!-- Modal -->
-            <div class="modal fade" id="staticBackdrop_mercados" data-keyboard="true"
-              tabindex="-1" role="dialog" aria-hidden="true">
-               <!-- la funcion backdrop hace estatico en fondo, data-backdrop="static"  -->
+            <div class="modal fade" id="staticBackdrop_mercados" data-keyboard="true" tabindex="-1" role="dialog"
+              aria-hidden="true">
+              <!-- la funcion backdrop hace estatico en fondo, data-backdrop="static"  -->
               <div class="modal-dialog modal-dialog-scrollable">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -224,12 +253,12 @@
           <div class="card-footer bg-white">
             <!-- Button Modal -->
             <button type="button" class="conocer btn btn-success" data-toggle="modal"
-              data-target="#staticBackdrop_mercados">Conocer
+              data-target="#staticBackdrop_mercados" style="font-size:1.200vw;">Conocer
               más</button>
             <!-- Button Modal -->
           </div>
           <div class="card-footer">
-            <small class="text-muted">Ultima actualización 16/05/2020</small>
+            <small class="text-muted" style="font-size:1vw;">Ultima actualización 16/05/2020</small>
           </div>
           <!-- Tercer card -->
         </div>
@@ -248,9 +277,9 @@
             </p>
 
             <!-- Modal -->
-            <div class="modal fade" id="staticBackdrop_espectaculos" data-keyboard="false"
-              tabindex="-1" role="dialog" aria-hidden="true">
-               <!-- la funcion backdrop hace estatico en fondo, data-backdrop="static"  -->
+            <div class="modal fade" id="staticBackdrop_espectaculos" data-keyboard="false" tabindex="-1" role="dialog"
+              aria-hidden="true">
+              <!-- la funcion backdrop hace estatico en fondo, data-backdrop="static"  -->
               <div class="modal-dialog modal-dialog-scrollable">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -276,12 +305,12 @@
           <div class="card-footer bg-white">
             <!-- Button Modal -->
             <button type="button" class="conocer btn btn-success" data-toggle="modal"
-              data-target="#staticBackdrop_espectaculos">Conocer
+              data-target="#staticBackdrop_espectaculos" style="font-size:1.200vw;">Conocer
               más</button>
             <!-- Button Modal -->
           </div>
           <div class="card-footer">
-            <small class="text-muted">Ultima actualización 16/05/2020</small>
+            <small class="text-muted" style="font-size:1vw;">Ultima actualización 16/05/2020</small>
           </div>
           <!-- cuarto card -->
         </div>
@@ -297,9 +326,9 @@
             </p>
 
             <!-- Modal -->
-            <div class="modal fade" id="staticBackdrop_spublico" data-keyboard="false"
-              tabindex="-1" role="dialog" aria-hidden="true">
-               <!-- la funcion backdrop hace estatico en fondo, data-backdrop="static"  -->
+            <div class="modal fade" id="staticBackdrop_spublico" data-keyboard="false" tabindex="-1" role="dialog"
+              aria-hidden="true">
+              <!-- la funcion backdrop hace estatico en fondo, data-backdrop="static"  -->
               <div class="modal-dialog modal-dialog-scrollable">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -322,12 +351,12 @@
           <div class="card-footer bg-white">
             <!-- Button Modal -->
             <button type="button" class="conocer btn btn-success" data-toggle="modal"
-              data-target="#staticBackdrop_spublico">Conocer
+              data-target="#staticBackdrop_spublico" style="font-size:1.200vw;">Conocer
               más</button>
             <!-- Button Modal -->
           </div>
           <div class="card-footer">
-            <small class="text-muted">Ultima actualización 16/05/2020</small>
+            <small class="text-muted" style="font-size:1vw;">Ultima actualización 16/05/2020</small>
           </div>
           <!-- Quinto card -->
         </div>
@@ -414,6 +443,7 @@
   <!-- Footer -->
 
   <!-- Optional JavaScript -->
+  <script src="./js/validar_campos_login.js"></script>  
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
