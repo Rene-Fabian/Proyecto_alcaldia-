@@ -6,3 +6,12 @@ text-align: center;
 canvas{
     margin-top: 5em;
 }
+
+button.btn{
+   
+    display: flex;
+    margin:auto;
+    width: auto;
+    text-align: center;
+    
+  }
