@@ -16,10 +16,11 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Material Design Bootstrap -->
- 
+
     <!-- Your custom styles (optional) -->
     <link rel="stylesheet" href="./fontawesome-free-5.13.0-web/css/all.css">
-
+    <script src="./js/graficas_pdf.js"></script>
+    <script src="./jsPDF-1.3.2/dist/jspdf.min.js"></script>
 
 </head>
 
@@ -96,27 +97,36 @@
 
 
 
-    <!-- graficas -->
+   
+    <div id="content">
+        <!-- graficas -->
     <div class="graficas container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6" >
                 <canvas id="labelChart"></canvas>
             </div>
             <div class="col-md-6">
-                <canvas id="barChart"></canvas>
+                <canvas id="barChart" ></canvas>
             </div>
         </div>
     </div>
     <!-- graficas -->
-<br><br>
+    <br><br>
+
+    </div>
+    <div id="elementH"></div>
 
 
-<div class="descargar_pdf container">
-    <button type="submit" class="btn btn-info"> Descargar PDF</button>
-</div>
+    <div class="descargar_pdf container">
+            <button type="button" class="btn btn-danger " value="Descargar PDF" onclick="getPDFgraficos();">
+                Descargar Graficos
+            </button>
+    </div>
+   
+    
+  
 
-
-
+    
     <!-- jQuery -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->
