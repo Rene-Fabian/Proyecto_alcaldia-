@@ -2,7 +2,7 @@
 var ctxB = document.getElementById("barChart").getContext('2d');
 var myBarChart = new Chart(ctxB, {
     type: 'bar',
-    data: {
+        data: {
         labels: ["Area1", "Area2", "Area3", "Area4", "Area5", "Area6"],
         datasets: [{
             label: '# Depatmentos',
@@ -26,13 +26,24 @@ var myBarChart = new Chart(ctxB, {
             borderWidth: 1
         }]
     },
+    tooltips:{
+        mode: 'index',
+        intersect: false
+    },
+    
     options: {
         scales: {
             yAxes: [{
                 ticks: {
                     beginAtZero: true
                 }
+                
+                
             }]
         }
+       
     }
+   
 });
+
+

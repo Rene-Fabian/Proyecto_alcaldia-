@@ -20,6 +20,10 @@ var myPieChart = new Chart(ctxP, {
                 boxWidth: 10
             }
         },
+        tooltips:{
+            mode: 'index',
+            intersect: false
+        },
         plugins: {
             datalabels: {
                 formatter: (value, ctx) => {
