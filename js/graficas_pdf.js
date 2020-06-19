@@ -1,15 +1,24 @@
 function getPDFgraficos() {
-   
-    
-    var canvas = document.getElementById("labelChart");
-    var canvasImg = canvas.toDataURL("image/jpeg", 1.0);
-    var doc = new jsPDF('landscape');
-    doc.setFontSize(20);
-	doc.text(10, 10, "Cool Chart");
-	doc.addImage(canvasImg, 'PNG', 10, 15, 280, 150);
-	doc.save('canvas.pdf');
 
-  }
+
+  
+  var canvasdos = document.getElementById("barChart");
+  var canvas = document.getElementById("labelChart");
+  var canvasImgdos = canvasdos.toDataURL("image/jpeg", 1.0);
+  var canvasImg = canvas.toDataURL("image/jpeg", 1.0);
+  var doc = new jsPDF('landscape');
+  doc.setFontSize(20);
+  doc.text(10, 10, "Cool Chart");
+  doc.addImage(canvasImg, 'PNG', 10, 15, 280, 150);
+
+  // agregar una nueva página
+  doc.addPage();
+  doc.setFontSize(20);
+  doc.text(10, 10, "Cool Chart");
+  doc.addImage(canvasImgdos, 'PNG', 10, 15, 280, 150);
+  // nombre del documento descargado 
+  doc.save('reporte.pdf');
+}
 
 // function getPDF(){
 
