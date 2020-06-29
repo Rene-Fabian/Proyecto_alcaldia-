@@ -1,20 +1,23 @@
 
 function activarbotones() {
 var campovalido = false;
-var campovalidopdf = false;
+// var campovalidopdf = false;
 var botonenviar=document.getElementById('enviar');
-var botonpdf=document.getElementById('documentopdf');
+// var botonpdf=document.getElementById('documentopdf');
 
 
-if (campovalido == true && campovalidopdf==true) {
+if (campovalido == true) {
+// if (campovalido == true && campovalidopdf==true) {
     botonenviar.disabled =true;
-    botonpdf.disabled=true
+
 }
 else {
     botonenviar.disabled =false;
-    botonpdf.disabled= false;
+    // botonpdf.disabled= false;
 
 }
 }
+
+
 
 
