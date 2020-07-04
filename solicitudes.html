@@ -19,6 +19,7 @@
   <script src="./js/activar_botones.js"></script>
   <script src="./js/activar_boton_pdf.js"></script>  
   <script src="./js/alert_enviar.js"></script>
+  <script src="./js/enviar_datos_solicitud.js"></script>
 
 </head>
 
@@ -67,7 +68,7 @@
                 </div>
                 <div class="form-group">
 
-                  <input type="password" class="form-control" id="pwd" placeholder="Contraseña" name="pswd" required>
+                  <input type="password" class="form-control" id="pwd" placeholder="Contraseña"  name="pswd" required>
                   <div class="valid-feedback">Contenido Valido.</div>
                   <div class="invalid-feedback">Por favor llenar campo.</div>
                 </div>
@@ -110,7 +111,7 @@
 
   <div class="container">
     <div class="card">
-      <form action="./js/enviar_datos_solicitud.js" method="POST">
+      <form action="" method="POST">
         <!--  titulo -->
         <h5 class="card-header">
           <strong>Datos personales</strong>
@@ -171,7 +172,7 @@
           <!-- primera fila -->
           <div class="row">
             <div class="col">
-              <input type="text" class="form-control" placeholder="Calle" id="calle" pattern="{2,5}" required>
+              <input type="text" class="form-control" placeholder="Calle" id="calle"  required>
             </div>
             <div class="col-md-6">
               <input type="text" class="form-control" placeholder="N° Interior" id="interior" minlength="2"
@@ -196,10 +197,10 @@
           <!-- tercera fila -->
           <div class="row">
             <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="Colonia" id="colonia" pattern="{2,5}" required>
+              <input type="text" class="form-control" placeholder="Colonia" id="colonia"  required>
             </div>
             <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="Pueblo" id="pueblo" pattern="{2,5}"  required>
+              <input type="text" class="form-control" placeholder="Pueblo" id="pueblo" required>
             </div>
           </div>
           <!-- tercera fila -->
@@ -246,7 +247,8 @@
         <input type="button" class="btn btn-danger " id="documentopdf" value="Descargar PDF" onclick="getPDF();"
           disabled>
         <hr>
-        <input type="submit" class=" btn btn-success " id="enviar" value="Enviar" onclick="activarbotonpdf();"  disabled>
+        <input type="submit" class=" btn btn-success " id="enviar" value="Enviar" onclick="postdatos();"  disabled>
+        <!-- <input type="submit" class=" btn btn-success " id="enviar" value="Enviar" onclick="activarbotonpdf();"  disabled> -->
 
         <div class="alert alert-danger" id="passwordsNoMatchRegister" style="display:none;">
 
@@ -367,4 +369,4 @@
 
 </body>
 
-</html>
+</html> 
