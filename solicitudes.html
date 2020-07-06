@@ -20,6 +20,7 @@
   <script src="./js/activar_boton_pdf.js"></script>  
   <script src="./js/alert_enviar.js"></script>
   <script src="./js/enviar_datos_solicitud.js"></script>
+  <script src="./js/cookies.js"></script>
 
 </head>
 
@@ -197,10 +198,11 @@
           <!-- tercera fila -->
           <div class="row">
             <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="Colonia" id="colonia"  required>
+              <input type="text" class="form-control" placeholder="Colonia" id="colonia" required>
             </div>
             <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="Pueblo" id="pueblo" required>
+            
+              <input type="text" name="poblado" id="poblado" class="form-control" placeholder="-Pueblo">
             </div>
           </div>
           <!-- tercera fila -->
@@ -247,12 +249,10 @@
         <input type="button" class="btn btn-danger " id="documentopdf" value="Descargar PDF" onclick="getPDF();"
           disabled>
         <hr>
-        <input type="submit" class=" btn btn-success " id="enviar" value="Enviar" onclick="postdatos();"  disabled>
+        <input type="submit" class=" btn btn-success " id="enviar" value="Enviar" onclick="postdatos();" disabled>
         <!-- <input type="submit" class=" btn btn-success " id="enviar" value="Enviar" onclick="activarbotonpdf();"  disabled> -->
 
-        <div class="alert alert-danger" id="passwordsNoMatchRegister" style="display:none;">
-
-        </div>
+      
 
 
 
