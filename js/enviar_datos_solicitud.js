@@ -2,9 +2,7 @@
 // 	postdatos();
 // });
 function postdatos() {
-    // let url = `https://192.168.1.68:8080/request`;
-  
-  
+    const url = 'http://localhost:2727/request';
     var data = {};
     data.nombre = document.getElementById('nombre').value;
     data.paterno = document.getElementById('paterno').value;
@@ -20,8 +18,19 @@ function postdatos() {
     data.village = document.getElementById('poblado').value;
     data.tipo_solicitud = document.getElementById('tipo_solicitud').value;
     data.descripcion = document.getElementById('descripcion').value;
-    var datajson = JSON.stringify(data);
-    console.log(datajson);
-
-
+    // create request object
+    const request = new Request(url, {
+    method: 'POST',
+    body: JSON.stringify(data),
+    headers: new Headers({
+        'Content-Type': 'application/json'
+    })
+});
+// pass request object to `fetch()`
+fetch(request)
+    .then(res => res.json())
+    .then(res => console.log(res));
 }
+
+
+
