@@ -3,11 +3,13 @@ var ctxP = document.getElementById("labelChart").getContext('2d');
 var myPieChart = new Chart(ctxP, {
     plugins: [ChartDataLabels],
     type: 'pie',
+    backgroundColor:'rgba(200, 200, 200, 1)',
     data: {
-        labels: ["Area1", "Area2", "Area3", "Area4", "Area5"],
+        labels: ["DGO", "UAR", "JUDM", "JUDGMEP", "JUDSP"],
         datasets: [{
             data: [210, 130, 120, 160, 120],
             backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
+          
             hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
         }]
     },
