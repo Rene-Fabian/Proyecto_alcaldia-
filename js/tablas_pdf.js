@@ -30,7 +30,6 @@
 
 
 
-
 function getPDFtablas() {
     var doc = new jsPDF('p', 'pt', 'letter');
     var elementHTML = $('#content')[0];
