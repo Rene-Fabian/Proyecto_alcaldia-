@@ -41,10 +41,17 @@
                         <a class="nav-link " href="./funcionarios.html">Funcionarios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-success" href="./solicitudes.html">Solicitudes</a>
+                        <a class="nav-link " href="./solicitudes.html">Solicitudes</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-success" id="navbarDropdownMenuLink" aria-haspopup="true"
+                            aria-expanded="false" href="./login.html">
+                            <i class="fas fa-user"></i>
+                        </a>
+
                     </li>
                     <!-- dropdown usuario -->
-                    <li class="nav-item dropdown">
+                    <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             <i class="fas fa-user"></i>
@@ -53,7 +60,7 @@
                             aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="./login.html">Iniciar sesión</a>
                         </div>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </nav>
@@ -67,13 +74,13 @@
         <form action="" method="GET" class="needs-validation text-center border " novalidate>
             <h2 class="text-center">Iniciar sesión</h2>
             <div class="form-group">
-            <br>
-                <input type="text" class="form-control" id="uname" placeholder="Usuario" name="uname" required>
+                <br>
+                <input type="email" class="form-control" id="uname" placeholder="Usuario" name="uname" required>
                 <div class="valid-feedback">Contenido Valido.</div>
                 <div class="invalid-feedback">Por favor llenar campo.</div>
             </div>
             <div class="form-group">
-                
+
                 <input type="password" class="form-control" id="pwd" placeholder="Contraseña" name="pswd" required>
                 <div class="valid-feedback">Contenido Valido.</div>
                 <div class="invalid-feedback">Por favor llenar campo.</div>
@@ -84,20 +91,53 @@
                     <div class="valid-feedback">Valido.</div>
                     <div class="invalid-feedback">Selecciona la casilla para continuar.</div>
                 </label>
+
+            </div>
+            <div> <a href="" id="recuperar" data-toggle="modal" data-target="#exampleModal">Olvidate tu
+                    contreseña?</a></div>
+
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Recupera tu contreseña</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-center">introduce tu correo electronico</p>
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Ejemplo@.com">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger">Recuperar</button>
+
+                            <div class="alert alert-success" role="alert">
+                                A simple success alert—check it out!
+                              </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <p>Siguenos</p>
-            <a href="#" class="mx-2" role="button"><i class="fab fa-facebook-f light-blue-text"></i></a>
-            <a href="#" class="mx-2" role="button"><i class="fab fa-twitter light-blue-text"></i></a>
-            <a href="#" class="mx-2" role="button"><i class="fab fa-instagram light-blue-text"></i></a>
-            <br>
-            <button type="submit" class="btn btn-primary">Entrar</button>
+            <!-- <p>Siguenos</p> -->
+            <div class="mt-3">
+                <a href="#" class="mx-2" role="button"><i class="fab fa-facebook-f light-blue-text"></i></a>
+                <a href="#" class="mx-2" role="button"><i class="fab fa-twitter light-blue-text"></i></a>
+                <a href="#" class="mx-2" role="button"><i class="fab fa-instagram light-blue-text"></i></a></div>
+
+            <button type="submit" class="btn btn-primary mt-3">Entrar</button>
         </form>
-         <script src="./js/validar_campos_login.js"></script>  
+        <script src="./js/validar_campos_login.js"></script>
     </div>
 
-   
-    
+
+
 
 
 

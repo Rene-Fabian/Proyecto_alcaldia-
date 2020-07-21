@@ -3,8 +3,8 @@
 // });
 
 function postdatos() {
-    var url = 'http://localhost:2727/request';
-    var data = {};
+    const url = 'http://localhost:2727/request';
+    const data = {};
     data.nombre = document.getElementById('nombre').value;
     data.paterno = document.getElementById('paterno').value;
     data.materno = document.getElementById('materno').value;
@@ -26,7 +26,6 @@ function postdatos() {
     var xhr = new XMLHttpRequest();
     xhr.open('POST', url, true);
     xhr.setRequestHeader('Content-Type', 'application/json');
-   
     xhr.send(json);
 
 }
