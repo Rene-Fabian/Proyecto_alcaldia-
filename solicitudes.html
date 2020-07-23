@@ -11,13 +11,13 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/style._solicitudes.css">
-  <link rel="stylesheet" href="./css/style_login.css">
+
   <link href="./fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet">
   <title>Alcaldía Milpa Alta</title>
   <script src="./jsPDF-1.3.2/dist/jspdf.min.js"></script>
   <script src="./js/getPDF.js"></script>
   <script src="./js/activar_botones.js"></script>
-  <script src="./js/activar_boton_pdf.js"></script>  
+  <script src="./js/activar_boton_pdf.js"></script>
   <script src="./js/alert_enviar.js"></script>
   <script src="./js/enviar_datos_solicitud.js"></script>
   <script src="./js/cookies.js"></script>
@@ -26,53 +26,55 @@
 
 <body>
 
-    <!--navbar-->
-    <header class="header sticky-top">
-      <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-        <a class="navbar-brand" href="#">
-          <img class="logoalcaldia" src="./img/Logo_MA.svg" class="logoalcaldia d-inline-block align-top" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-  
-        <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
-          <ul class="nav navbar-nav navbar-right">
-            <!-- alineacion del navbar -->
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./tramites.html">Tramites</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="./funcionarios.html">Funcionarios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-success" href="./solicitudes.html">Solicitudes</a>
-            </li>
-            <!-- dropdown usuario -->
-            <li class="nav-item dropdown">
-              <a class="nav-link" id="navbarDropdownMenuLink" aria-haspopup="true"
-                aria-expanded="false" href="./login.html">
-                <i class="fas fa-user"></i>
-              </a>
-              
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <!--navbar-->
+  <!--navbar-->
+  <header class="header sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <a class="navbar-brand" href="#">
+        <img class="logoalcaldia" src="./img/Logo_MA.svg" class="logoalcaldia d-inline-block align-top" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
+        <ul class="nav navbar-nav navbar-right">
+          <!-- alineacion del navbar -->
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./tramites.html">Tramites</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="./funcionarios.html">Funcionarios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-success" href="./solicitudes.html">Solicitudes</a>
+          </li>
+          <!-- dropdown usuario -->
+          <li class="nav-item dropdown">
+            <a class="nav-link" id="navbarDropdownMenuLink" aria-haspopup="true" aria-expanded="false"
+              href="./login.html">
+              <i class="fas fa-user"></i>
+            </a>
+
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!--navbar-->
 
 
   <!-- jumbotron-fluid -->
-  <div class="jumbotron bg-white">
+  <div class="jumbotron">
     <div class="container">
-      <h1 class="display-4 text-center">Realiza tu solicitud</h1>
+
+      <h1 class="display-4 text-center text-success">Realiza tu solicitud</h1>
+
+      <p class="lead text-center text-success">Ahora ya puedes realizar tu solicitud desde la comodidad de tu hogar</p>
       <hr>
-      <p class="lead text-center">Ahora ya puedes realizar tu solicitud desde la comodidad de tu hogar</p>
     </div>
   </div>
   <!-- jumbotron-fluid -->
@@ -111,7 +113,7 @@
             </div>
             <div class="col-md-6">
               <input type="email" class="form-control" placeholder=" Correo electrónico" id="correo" required>
-            
+
             </div>
           </div>
           <!-- segunda fila -->
@@ -144,7 +146,7 @@
           <!-- primera fila -->
           <div class="row">
             <div class="col">
-              <input type="text" class="form-control" placeholder="Calle" id="calle"  required>
+              <input type="text" class="form-control" placeholder="Calle" id="calle" required>
             </div>
             <div class="col-md-6">
               <input type="text" class="form-control" placeholder="N° Interior" id="interior" minlength="2"
@@ -172,7 +174,7 @@
               <input type="text" class="form-control" placeholder="Colonia" id="colonia" required>
             </div>
             <div class="col-md-6">
-            
+
               <input type="text" name="poblado" id="poblado" class="form-control" placeholder="Pueblo">
             </div>
           </div>
@@ -225,7 +227,7 @@
             <div class="col-md-12">
               <textarea class="form-control" name="descripcion" id="descripcion" cols="30" rows="5"
                 placeholder="Descripción" onkeypress="activarbotones();" required></textarea>
-                <!-- placeholder="Descripción" onkeypress="activarbotones();" required></textarea> -->
+              <!-- placeholder="Descripción" onkeypress="activarbotones();" required></textarea> -->
             </div>
           </div>
           <!-- tercera fila -->
@@ -239,7 +241,7 @@
         <input type="submit" class=" btn btn-success " id="enviar" value="Enviar" onclick="postdatos();" disabled>
         <!-- <input type="submit" class=" btn btn-success " id="enviar" value="Enviar" onclick="activarbotonpdf();"  disabled> -->
 
-      
+
 
 
 
@@ -337,8 +339,8 @@
 
 
   <!-- Optional JavaScript -->
-  <script src="./js/validar_campos_login.js"></script>  
-  
+  <script src="./js/validar_campos_login.js"></script>
+
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -356,4 +358,4 @@
 
 </body>
 
-</html> 
+</html>
