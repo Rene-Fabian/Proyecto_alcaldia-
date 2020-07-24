@@ -11,13 +11,14 @@ $(document).ready(function () {
         },
         "columns": [
             { "data": "id" },
-            // { "data": "id" },
             { "data": "fecha" },
             { "data": "nombre" },
             { "data": "paterno" },
             { "data": "materno" },
             { "data": "area" },
             { "data": "tipo_peticion" },
+            { "data": "presupuesto" },
+            { "data": "estatus" },
             { "defaultContent": "<div class='text-center'><div class='btn-group'><button class='btn btn-primary btn-sm btnEditar'><i class='material-icons'>edit</i></button><button class='btn btn-danger btn-sm btnBorrar'><i class='material-icons'>delete</i></button></div></div>" }
         ]
         

@@ -9,11 +9,16 @@ body{
 
 .caja{
   /* border: 1px solid; */
-  padding: 5px;
+  padding: 20px;
     box-shadow: 10px 10px 50px 1px #7c7c81;
-      border-radius: 10px;
-}
+      border-radius: 8px;
 
+
+}
+.content{
+  margin-right: 1em;
+  margin-left: 1em;
+}
 
 button.btn{
     display: flex;
