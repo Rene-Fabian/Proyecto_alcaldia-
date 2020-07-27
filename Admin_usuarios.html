@@ -28,8 +28,8 @@
 <body>
 
 
-      <!--navbar-->
-      <header class="header sticky-top">
+    <!--navbar-->
+    <header class="header sticky-top">
         <nav class="navbar navbar-expand-lg navbar-light sticky-top">
             <a class="navbar-brand" href="#">
                 <img class="logoalcaldia" src="./img/Logo_MA.svg" class="logoalcaldia d-inline-block align-top" alt="">
@@ -53,11 +53,14 @@
                     <li class="nav-item">
                         <a class="nav-link text-white" href="./Admin_usuarios.html">Usuarios</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Admin_altas.html">Altas</a>
+                    </li>
                     <!-- dropdown usuario -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
-                          
+
                         </a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-default"
                             aria-labelledby="navbarDropdownMenuLink">
@@ -69,10 +72,10 @@
         </nav>
     </header>
     <!--navbar-->
-    
+
     <header>
         <h3 class='text-center'></h3>
-        
+
     </header>
 
     <!-- <div class="titulo"><h5 style="font-size:2.500vw;" class="text-center">Peticiones recibidas</h5></div> -->
@@ -102,39 +105,14 @@
                             <thead class="text-center">
                                 <tr>
                                     <th>id</th>
-                                    <th>Fecha Registro</th>
-                                    <th>Nombre(s)</th>
-                                    <th>A. Paterno</th>
-                                    <th>A. Materno</th>
-                                    <th>Area</th>
-                                    <th>Tipo Petición</th>
-                                    <th>Presupuesto</th>
-                                    <th>Estatus</th>
+                                    <th>Usuario</th>
+                                    <th>Correo</th>
+                                    <th>Rol</th>
                                     <th>Acciones</th>
                                 </tr>
                             </thead head>
                             <tbody>
-                                <tr>
-                                    <td>01</td>
-                                    <td>202020</td>
-                                    <td>rene</td>
-                                    <td>fabian</td>
-                                    <td>gonzalez</td>
-                                    <td>area</td>
-                                    <td>bacheo</td>
-                                    <td>cargar</td>
-                                </tr>
-                                <tr>
-                                    <td>01</td>
-                                    <td>202020</td>
-                                    <td>rene</td>
-                                    <td>fabian</td>
-                                    <td>gonzalez</td>
-                                    <td>area</td>
-                                    <td>bacheo</td>
-                                    <td></td>
-                                </tr>
-                                
+
 
                             </tbody>
                         </table>
@@ -143,7 +121,7 @@
             </div>
         </div>
     </div>
-    
+
     <div id="elementH"></div>
 
 
@@ -284,7 +262,7 @@
     <!-- datatables JS -->
     <script type="text/javascript" src="assets/datatables/datatables.min.js"></script>
 
-    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/main_usuarios.js"></script>
 
 
 </body>

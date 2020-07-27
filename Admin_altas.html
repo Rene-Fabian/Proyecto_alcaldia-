@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/style_estaditicas.css">
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style_altas.css">
     <!-- Material Design Bootstrap -->
 
     <!-- Your custom styles (optional) -->
@@ -46,19 +47,19 @@
                         <a class="nav-link" href="./Admin_peticiones.html">Peticiones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  text-white " href="./Admin_estadisticas.html">Estadisticas</a>
+                        <a class="nav-link" href="./Admin_estadisticas.html">Estadisticas</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./Admin_usuarios.html">Usuarios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./Admin_altas.html">Altas</a>
+                        <a class="nav-link text-white" href="./Admin_altas.html">Altas</a>
                     </li>
                     <!-- dropdown usuario -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
-                         
+
                         </a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-default"
                             aria-labelledby="navbarDropdownMenuLink">
@@ -71,85 +72,46 @@
     </header>
     <!--navbar-->
 
-    <!-- filtros -->
-    <div class="estructura container">
-        <form action="" method="post" class="form">
-            <div class="row">
-                <div class="col-md-3">
-                    <label for="inputArea" class="">Area:</label>
-                    <select id="inputArea" class="form-control">
-                        <option selected>DIRECCIÓN GENERAL DE OBRAS Y DESARROLLO URBANO</option>
-                        <option selected>DIRECCIÓN GENERAL DE SERVICIOS URBANOS</option>
-                        <option>DIRECCIÓN GENERAL DE CONSTRUCCIÓN DE CIUDADANIA</option>
-                    </select>
-                </div>
-                <div class="col-md-3">
-                    <label for="input_tipo_peticione">Tipo de petición</label>
-                    <select id="input_tipo_peticione" class="form-control">
-                        <!-- obras -->
-                        <option elected>Tope</option>
-                        <option>Bacheo</option>
-                        <option>Pavimentación</option>
-                        <option>Desazolve de fosa séptica</option>
-                        <option>Banquetas</option>
-                        <!-- servicios urbanos -->
-                        <option>Desazolve de canales</option>
-                        <option>Pipa de agua</option>
-                        <option>Poda de árbol</option>
-                        <option>Limpieza de barranca</option>
-                        <option>Luminarias</option>
-                        <!-- construcción de la ciudadania -->
-                        <option>Becas escolares</option>
-                        <option>Alimentate bien</option>
-                        <option>Atención y organización vecinales</option>
-                        <option>Solicitud de recorrido y audencias con el alcalde y/o funcionarios</option>
-                        <option>Atencion a jovenes</option>
-                    </select>
-                </div>
-                <div class="col-md-2">
-                    <label for="fecha_inicio">Fecha Inicial</label>
-                    <input type="date" name="" id="fecha_inicio" class="form-control">
-                </div>
-                <div class="col-md-2">
-                    <label for="fecha_final">Fecha Final</label>
-                    <input type="date" name="" id="fecha_inicio" class="form-control">
-                </div>
-                <div class="col-md-2">
-                    <label for="consultar"></label>
-                    <input type="button" value="consultar" class="btn btn-outline-success btn-block">
-                </div>
 
+
+
+    <!--Inicio_formulario -->
+    <div class="formbox container">
+        <div class="card mt-5">
+            <div class="card-body">
+                <form action="" method="post">
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="display-4 mt-4 text-center text-success ">Crear Usuario</h1>
+                            <input type="text" name="usuario" id="usuario" class="form-control mt-4"
+                                placeholder="Usuario">
+                            <input type="mail" name="email" id="email_alta" class="form-control mt-4"
+                                placeholder="Email">
+                            <input type="password" name="password" id="password" class="form-control mt-4"
+                                placeholder="Password">
+                            <select name="rol" id="rol" class="form-control mt-4">
+                                <option value="">Rol1</option>
+                                <option value="">Rol2</option>
+                                <option value="">Rol3</option>
+                                <option value="">Rol4</option>
+                                <option value="">Rol5</option>
+                            </select>
+                            <input type="submit" value="Registrar" class="btn btn-outline-success mt-4" >
+                        </div>
+                    </div>
+                </form>
             </div>
-        </form>
-    </div>
 
-
-
-
-    <div id="content">
-        <!-- graficas -->
-        <div class="graficaspdf container" id="reportPage">
-            <div class="row">
-                <div class="col-md-6">
-                    <canvas id="labelChart" class="bg-white"></canvas>
-                </div>
-                <div class="col-md-6">
-                    <canvas id="barChart" class="bg-white"></canvas>
-                </div>
-            </div>
         </div>
-        <!-- graficas -->
-        <br><br>
 
     </div>
-    <div id="elementH"></div>
+    <!--Fin_formulario-->
 
 
-    <div class="descargar_pdf container">
-        <button type="button" class="btn btn-outline-danger " value="Descargar PDF" onclick="getPDFgraficos();">
-            Descargar Graficos
-        </button>
-    </div>
+
+
+
+
 
 
 
@@ -164,9 +126,7 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Your custom scripts (optional) -->
-    <script type="text/javascript" src="./js/grafica_pastel.js"></script>
 
-    <script type="text/javascript" src="./js/grafica_barras.js"></script>
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
