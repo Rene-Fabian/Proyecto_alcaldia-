@@ -3,7 +3,7 @@
 // });
 
 function postdatos() {
-    const url = 'http://localhost:2727/request';
+    const url = 'http://localhost:8080/request';
     const data = {};
     data.nombre = document.getElementById('nombre').value;
     data.paterno = document.getElementById('paterno').value;
