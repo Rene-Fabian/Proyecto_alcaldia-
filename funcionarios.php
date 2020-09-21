@@ -33,21 +33,21 @@
         <ul class="nav navbar-nav navbar-right">
           <!-- alineacion del navbar -->
           <li class="nav-item">
-            <a class="nav-link" href="./index.html">Inicio</a>
+            <a class="nav-link" href="./index.php">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./tramites.html">Tramites</a>
+            <a class="nav-link" href="./tramites.php">Tramites</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-success" href="./funcionarios.html">Funcionarios</a>
+            <a class="nav-link text-success" href="./funcionarios.php">Funcionarios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="./solicitudes.html">Solicitudes</a>
+            <a class="nav-link " href="./solicitudes.php">Solicitudes</a>
           </li>
           <!-- dropdown usuario -->
           <li class="nav-item dropdown">
             <a class="nav-link" id="navbarDropdownMenuLink" aria-haspopup="true"
-              aria-expanded="false" href="./login.html">
+              aria-expanded="false" href="./login.php">
               <i class="fas fa-user"></i>
             </a>
             
