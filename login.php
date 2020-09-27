@@ -71,11 +71,11 @@
 
 
     <div class="cuerpo container">
-        <form action="" method="GET" class="needs-validation text-center border " novalidate>
+        <form action="php/validacion_login.php" method="post" class="needs-validation text-center border " novalidate>
             <h2 class="text-center">Iniciar sesión</h2>
             <div class="form-group">
                 <br>
-                <input type="email" class="form-control" id="uname" placeholder="Usuario" name="uname" required>
+                <input type="text" class="form-control" id="uname" placeholder="Usuario" name="uname" required>
                 <div class="valid-feedback">Contenido Valido.</div>
                 <div class="invalid-feedback">Por favor llenar campo.</div>
             </div>
